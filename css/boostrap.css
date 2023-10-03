@@ -214,6 +214,16 @@
     }
 
     /*barra de navegación*/
+    
+    .navbar-toggler:focus {
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    .navbar-toggler {
+        border: 0 !important;
+    }
+    
     .iconos{
         display: flex;
         flex-direction: row;
@@ -259,18 +269,18 @@
         background-color: lightgray;
         border-radius: 10px;
         margin: 0.5rem;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
     .card-items {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         width: 95%;
-        margin-left: auto;
-        margin-right: auto;
         background-color: lightgray;
-
-
     }
 
     .cart {
