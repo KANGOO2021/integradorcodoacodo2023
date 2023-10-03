@@ -1,4 +1,4 @@
- @media (max-width: 2000px) { 
+@media (max-width: 2000px) { 
     * {
         margin: 0;
         padding: 0;
@@ -105,12 +105,15 @@
         height: 380px;
         margin: 0rem;
         margin-bottom: 1.5rem;
+        
        
     }
 
     #card:hover {
         border: 1px solid darkgray;
         box-shadow: 0 0 5px;
+     
+       
     }
 
     .precio {
@@ -192,7 +195,14 @@
         width: 610px;
         height:450px;
     }
-
+    
+    .footer-carrito{
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
+    
+  
 
  }
  
@@ -420,15 +430,39 @@
     .copyright {
         font-size: 12px;
     }
+    
+    .footer-carrito {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+    }
+    
+    .main-carrito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100vw;   
+    }
   
   }
  
  
 @media (max-width: 576px) {
 
+
     /*barra de navegación*/
     .titulo {
         color: white;
+    }
+    
+    .navbar-toggler:focus {
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    .navbar-toggler {
+        border: 0 !important;
     }
 
     .button-toggle {
@@ -482,6 +516,7 @@
         display: flex;
         align-items: center;
     }
+    
 
     .productos {
         display: none;
@@ -494,11 +529,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     
     .destacados{
         width: 70%;
+        height:auto;
+    }
     
+    .d-destacados .card-text{
+        text-align: justify;
+        font-size: 12px;
+      
     }
     
     .t-destacados{
@@ -525,6 +567,11 @@
     
     .footer{
         text-align: center;
+    }
+    
+    .footer-carrito {
+        position: static;
+      
     }
     
 }

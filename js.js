@@ -23,9 +23,9 @@ function addProduct(e){
     if (e.target.classList.contains('btn-add-cart')) {
         const selectProduct = e.target.parentElement; 
         readTheContent(selectProduct);
+       window.scroll(0, 300);    
     }
-    disabled()
-    window.scroll(0,450);
+    disabled()  
 }
 
 function deleteProduct(e) {
