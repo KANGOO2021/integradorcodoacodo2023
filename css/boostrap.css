@@ -327,6 +327,12 @@
         width: 400px;
         height: 200px;
     }
+    
+    .img-carrito{
+        width: 250px;
+        height: 250px;
+    }
+    
 
     /*Nuestros productos*/
 
@@ -451,10 +457,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        height: 70vh;
         width: 100vw;   
     }
-  
   }
  
  
