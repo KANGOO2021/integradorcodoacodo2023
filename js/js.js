@@ -133,12 +133,6 @@ function disabled() {
     }
 }
 
-function suscribir() {
-    alert('¡Gracias por suscribirse!');
-}
-
-document.getElementById("enviar").onclick = suscribir;
-
 
 function comprar() {
 
@@ -154,6 +148,9 @@ document.getElementById("comprar").onclick = comprar;
 function formatearNumero(number) {
     return new Intl.NumberFormat("es-CL").format(number);
 }
+
+
+
 
 
 
