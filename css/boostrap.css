@@ -29,7 +29,47 @@
     }
 
     /*carrito*/
+    
+    #seleccion{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .envios-gratis{
+        width: 200px;
+        height: 100px;
+    
+    }
 
+    .img-descuentos {
+        width: 300px;
+        height: 60px;
+    }
+    
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+    }
+  
+    
+    .modal-body {
+        width: 600px;
+        height: 300px;   
+     }
+     
+     .descuentos {
+         border:solid 1px black;
+         margin: 10px;
+         width: auto;
+         cursor: pointer;
+     }
+     
+     .modal-descuentos {
+        display: flex;
+     }
+    
+    
     .container-products {
         display: none;
     }
@@ -94,8 +134,9 @@
     }
 
     #comprado {
-        width: 400px;
-        height: 200px;
+        width: 600px;
+        height: 550px;
+  
     }
 
     /*Nuestros productos*/
@@ -252,7 +293,37 @@
     }
 
     /*carrito*/
-
+    .modal-body{
+        width: 100%;
+    }
+    
+    .envios-gratis {
+        width: 150px;
+        height: 80px;
+    }
+    
+    .img-descuentos {
+        width: 210px;
+        height: 40px;
+        
+    }
+    
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .descuentos {
+        border: solid 1px black;
+        margin: 20px;
+        width: auto;
+        cursor: pointer;
+    }
+    
+    .modal-descuentos {
+        display: flex;
+    }
+/**/
     .container-products {
         display: none;
     }
@@ -317,8 +388,8 @@
     }
 
     #comprado {
-        width: 400px;
-        height: 200px;
+        width: 100%;
+        height: 500px;
     }
     
     .img-carrito{
@@ -427,8 +498,13 @@
     }
     
     .modal-content {
-        width: 640px;
+        width: 100%;
         height: 550px;
+    }
+    
+    .img-ubicacion {
+        width: 460px;
+     
     }
 
     .ubicacion:hover {
@@ -439,6 +515,7 @@
     .copyright {
         font-size: 12px;
     }
+    
        
     .main-carrito {
         display: flex;
@@ -488,6 +565,47 @@
     
     /* Carrito */
     
+    .modal-descuentos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .envios-gratis {
+        width: 200px;
+        height: 80px;
+    }
+    
+    .div-descuentos{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-precios{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    
+    .img-descuentos {
+        width: 100%;
+        height: 50px;
+    }
+    
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .descuentos {
+        border: solid 1px black;
+        margin: 10px;
+        width: auto;
+        cursor: pointer;
+    }
+    /**/
     .card-items {
         display: flex;
         flex-direction: column;
@@ -501,7 +619,7 @@
     
     #comprado{
         width: 100%;
-        height: 200px;
+        height: 700px;
     }
         
     /*  Nuestros productos */

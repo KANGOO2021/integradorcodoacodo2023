@@ -112,20 +112,47 @@
                     </div>
                     <div class="d-flex justify-content-center align-items-center my-3">
                         <h2 class="mx-2">Total: $<strong class="price-total">0</strong></h2>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Finalizar Compra</button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Ir a pagar</button>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                            <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content modal-carrito" id="comprado">
                                     <div class="modal-header">
                                         <h1 class="modal-title fs-5" id="exampleModalLabel">TecnoBA</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
-                                        ¡Gracias por su compra!
+                                    <div class="modal-body modal-descuentos">
+                                    <div class="div-descuentos">
+                                        <div class="descuentos" onclick="descuentos('0.10')">
+                                        <img  class="img-descuentos" src="assets/comprar/bancociudad.png" alt="">
+                                        <p>Descuento del 10%</p>
+                                        </div>
+                                        <div class="descuentos" onclick="descuentos('0.15')">
+                                        <img class="img-descuentos" src="assets/comprar/bancogalicia.png" alt="">
+                                        <p>Descuento del 15%</p>
+                                        </div>
+                                        <div class="descuentos" onclick="descuentos('0.21')">
+                                        <img class="img-descuentos" src="assets/comprar/bancoprovincia.png" alt="">
+                                        <p>Descuento del 21%</p>
+                                        </div>
+                                    </div>
+                                    <div class="div-precios">
+                                        <h2 class="m-2">Subtotal: $<strong id="price-descuentos">0</strong></h2>
+                                        <div>
+                                            <select class="form-select" id="seleccion" name="seleccion"  onclick="precioFinal()">
+                                                <option value="" selected>Selecciona tu banco</option>
+                                                <option value="0.10">Banco Ciudad</option>
+                                                <option value="0.15">Banco Galicia</option>
+                                                <option value="0.21">Banco Provincia</option>
+                                            </select>
+                                            <img class="envios-gratis my-4" src="assets/productos/descarga.jpeg" alt="">
+                                            <h2 class="mx-2">Precio Total: $<strong id="price-final">0</strong></h2>
+                                        </div>
+                                    </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="comprar">Aceptar</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="volver()">Volver</button>
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="comprar()" >Finalizar compra</button>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -508,7 +535,7 @@
                         <a href="">contacto@tecnoba.com.ar</a>
                     </div>
                     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="exampleModalLabel1">Ubicacion</h1>
