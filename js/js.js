@@ -7,9 +7,6 @@ let priceSubTotal = document.querySelector('#price-descuentos')
 let priceFinal = document.querySelector('#price-final')
 let amountProduct = document.querySelector('.count-product');
 
-let discounts = document.querySelector('.div-precios');
-
-
 
 let buyThings = [];
 let totalCard = 0;
@@ -20,9 +17,7 @@ loadEventListenrs();
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
     allContainerCartCel.addEventListener('click', addProduct);
-    containerBuyCart.addEventListener('click', deleteProduct);
-    discounts.addEventListener('click', precioFinal);
-    
+    containerBuyCart.addEventListener('click', deleteProduct);   
 }
 
 function addProduct(e){
