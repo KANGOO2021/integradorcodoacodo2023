@@ -167,9 +167,10 @@ function formatearNumero(number) {
 
 function precioFinal(){
 
-    let opcion = document.getElementById("seleccion").value
+    let indice = document.getElementById("seleccion").selectedIndex
+    let opcion = document.getElementById("seleccion").options[indice].value
     //console.log(opcion)
-
+   
     let total = totalCard - totalCard * opcion
     //console.log(total)
   
