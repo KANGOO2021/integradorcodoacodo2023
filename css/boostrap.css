@@ -692,6 +692,15 @@
         text-align: center;
     }
     
+   /*  #seleccion {
+        cursor: not-allowed;
+        background-color: rgb(229, 229, 229) !important;
+    }
+    
+    #seleccion {
+        pointer-events: none;
+    } */
+    
 }
 
 
